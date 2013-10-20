@@ -1,0 +1,47 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>meetup_test</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="mu-upcoming-events" data-group_id="5397052" data-sig_id="66520712" data-sig="f43c666b2c7cd1e05a33543040c502e20aa7d548" data-page="4">
+                        <script class="template" type="text/x-handlebars-template">
+                            {{#each this}}
+                                <div class="mu-upcoming-event">
+                                    <a href="{{event_url}}" data-event="{{id}}" class="mu-rsvp-btn">RSVP</a> <a href="{{event_url}}" class="mu-event-name">{{name}}</a> on {{mu-date-time time}}
+                                    <div class="mu-event-detail">
+                                        <div class="mu-event-stat">Duration: {{mu-time-span duration}}</div>
+                                        <div class="mu-event-stat">Attending: {{yes_rsvp_count}} {{group.who}}</div>
+                                        <div class="mu-event-description">{{{description}}}</div>
+                                    </div>
+                                </div>
+                            {{/each}}
+                        </script>
+                    </div>
+                    View our <a href="http://www.meetup.com/South-Coast-Innovator-Labs/events/calendar/">full event calendar on Meetup</a>.
+                </div>
+            </div>
+        </div>
+
+
+        <script src="scripts/e9545b4b.vendor.js"></script>
+
+        <script src="scripts/61725f6e.main.js"></script>
+</body>
+</html>

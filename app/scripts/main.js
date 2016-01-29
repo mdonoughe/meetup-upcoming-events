@@ -34,7 +34,7 @@
                 console.error(a);
             } else {
                 jqdiv.append(template(a[0].results));
-                mu.rsvpBtns('div.mu-upcoming-events');
+                mu.api({client: jqdiv.data('client_id')}, function(api) { api.rsvpBtns('div.mu-upcoming-events'); });
             }
         });
         template = Handlebars.compile($('script.template', div).html());

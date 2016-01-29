@@ -26,7 +26,7 @@
         };
         var template;
         $.when($.ajax({
-            url: 'http://api.meetup.com/2/events',
+            url: 'https://api.meetup.com/2/events',
             data: _.defaults(_.pick(jqdiv.data(), ['event_id', 'group_domain', 'group_id', 'group_urlname', 'member_id', 'time', 'venue_id', 'sig_id', 'sig'].concat(_.keys(defaults))), defaults),
             dataType: 'jsonp'
         }), mu).then(function (a, mu) {
